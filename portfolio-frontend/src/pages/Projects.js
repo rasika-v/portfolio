@@ -12,6 +12,26 @@ const projects = [
     title: 'Project 2',
     description: 'A brief description of Project 2.',
     imageUrl: 'https://via.placeholder.com/150'
+  },
+  {
+    title: 'Project 2',
+    description: 'A brief description of Project 2.',
+    imageUrl: 'https://via.placeholder.com/150'
+  },
+  {
+    title: 'Project 2',
+    description: 'A brief description of Project 2.',
+    imageUrl: 'https://via.placeholder.com/150'
+  },
+  {
+    title: 'Project 2',
+    description: 'A brief description of Project 2.',
+    imageUrl: 'https://via.placeholder.com/150'
+  },
+  {
+    title: 'Project 2',
+    description: 'A brief description of Project 2.',
+    imageUrl: 'https://via.placeholder.com/150'
   }
 ];
 

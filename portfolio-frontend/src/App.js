@@ -1,30 +1,48 @@
-// import logo from './logo.svg';
 import './App.css';
-// import { AppBar } from '@mui/material';
-// import ResponsiveAppBar from './components/AppBar';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
 import Navbar from './components/NavBar';
+import { ThemeProvider, createTheme, Box } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
 
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+    background: {
+      default: '#0a192f',
+      paper: '#1a1a1a'
+    },
+    primary: {
+      main: '#64ffda'
+    }
+  },
+});
 
 function App() {
   return (
-    <Router>
-      {/* <ResponsiveAppBar /> */}
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <Box sx={{
+        display: 'flex',
+        minHeight: '100vh'
+      }}>
+        <Navbar />
+        <Box component="main" sx={{ flexGrow: 1}}>
+          <section id="home" style={{ minHeight: '100vh', paddingTop: '70px' }}>
+            <Home />
+          </section>
+          <section id="about" style={{ minHeight: '100vh', paddingTop: '70px' }}>
+            <About />
+          </section>
+          <section id="projects" style={{ minHeight: '100vh', paddingTop: '70px' }}>
+            <Projects />
+          </section>
+        </Box>
+
+      </Box>
+    </ThemeProvider>
   );
 }
 
