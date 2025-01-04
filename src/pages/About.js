@@ -3,8 +3,8 @@ import { Container, Typography, Box, Card } from '@mui/material';
 import { motion } from 'framer-motion';
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
-import { FaReact, FaNode, FaPython } from 'react-icons/fa';
-import { SiFlutter, SiTypescript, SiJavascript, SiFirebase, SiTrello } from 'react-icons/si';
+import { FaReact, FaNode } from 'react-icons/fa';
+import { SiFlutter, SiTypescript, SiJavascript, SiFirebase } from 'react-icons/si';
 
 
 const About = () => {

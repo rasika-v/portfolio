@@ -33,8 +33,10 @@ const Navbar = () => {
   const navItems = [
     { text: 'Home', to: 'home' },
     { text: 'About', to: 'about' },
+    { text: 'Education', to: 'education' },
+    { text: 'Experience', to: 'experience' },
     { text: 'Projects', to: 'projects' },
-    { text: 'Contact', to: 'contacts' }
+    { text: 'Contact', to: 'contact' }
   ];
 
   return (

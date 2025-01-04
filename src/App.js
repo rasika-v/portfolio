@@ -6,6 +6,9 @@ import Projects from './pages/Projects';
 import Navbar from './components/NavBar';
 import { ThemeProvider, createTheme, Box } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
+import Education from './pages/Education';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
 
 const darkTheme = createTheme({
   palette: {
@@ -36,8 +39,17 @@ function App() {
           <section id="about" style={{ minHeight: '100vh', paddingTop: '70px' }}>
             <About />
           </section>
+          <section id="education" style={{ minHeight: '100vh', paddingTop: '70px' }}>
+            <Education />
+          </section>
+          <section id="experience" style={{ minHeight: '100vh', paddingTop: '70px' }}>
+            <Experience />
+          </section>
           <section id="projects" style={{ minHeight: '100vh', paddingTop: '70px' }}>
             <Projects />
+          </section>
+          <section id="contact" style={{ minHeight: '100vh', paddingTop: '70px' }}>
+            <Contact />
           </section>
         </Box>
 
